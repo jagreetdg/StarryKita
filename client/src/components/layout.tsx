@@ -2,16 +2,16 @@ import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { HomeIcon, MapPinIcon, CalendarIcon, MailIcon, Globe2Icon } from "lucide-react";
-import { useState } from "react";
+import { useTranslations } from "@/lib/translations/context";
 
 interface NavItemProps {
   href: string;
   icon: React.ReactNode;
-  children: React.ReactNode;
+  text: string;
   isActive: boolean;
 }
 
-function NavItem({ href, icon, children, isActive }: NavItemProps) {
+function NavItem({ href, icon, text, isActive }: NavItemProps) {
   return (
     <Link href={href}>
       <Button 
@@ -26,7 +26,7 @@ function NavItem({ href, icon, children, isActive }: NavItemProps) {
         <span className={cn(
           "hidden", 
           isActive ? "block" : "sm:block" 
-        )}>{children}</span>
+        )}>{text}</span>
       </Button>
     </Link>
   );
@@ -34,40 +34,58 @@ function NavItem({ href, icon, children, isActive }: NavItemProps) {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
-  const [language, setLanguage] = useState<'en' | 'jp'>('en');
+  const { language, setLanguage, t } = useTranslations();
 
   const toggleLanguage = () => {
-    setLanguage(prev => prev === 'en' ? 'jp' : 'en');
+    setLanguage(language === 'en' ? 'jp' : 'en');
   };
 
   return (
     <div className="min-h-screen flex flex-col">
       <header className="fixed top-0 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
         <div className="container mx-auto px-4">
-          <div className="flex h-16 items-center justify-between">
-            <nav className="flex items-center space-x-1 sm:space-x-4 text-sm font-medium">
-              <NavItem href="/" icon={<HomeIcon className="h-4 w-4" />} isActive={location === "/"}>
-                Home
-              </NavItem>
-              <NavItem href="/venues" icon={<MapPinIcon className="h-4 w-4" />} isActive={location.startsWith("/venues")}>
-                Venues
-              </NavItem>
-              <NavItem href="/events" icon={<CalendarIcon className="h-4 w-4" />} isActive={location === "/events"}>
-                Events
-              </NavItem>
-              <NavItem href="/contact" icon={<MailIcon className="h-4 w-4" />} isActive={location === "/contact"}>
-                Contact
-              </NavItem>
-              <Button 
-                variant="ghost" 
-                size="sm" 
-                onClick={toggleLanguage}
-                className="ml-2 sm:ml-4"
-              >
-                <Globe2Icon className="h-4 w-4" />
-                <span className="hidden sm:inline-block ml-2">{language.toUpperCase()}</span>
-              </Button>
+          <div className="flex h-16 items-center">
+            <nav className="flex flex-1 items-center space-x-1 sm:space-x-4 text-sm font-medium">
+              <NavItem 
+                href="/" 
+                icon={<HomeIcon className="h-4 w-4" />} 
+                text={t('nav', 'home')}
+                isActive={location === "/"} 
+              />
+              <NavItem 
+                href="/bars" 
+                icon={<MapPinIcon className="h-4 w-4" />} 
+                text={t('nav', 'bars')}
+                isActive={location.startsWith("/bars")} 
+              />
+              <NavItem 
+                href="/live-houses" 
+                icon={<MapPinIcon className="h-4 w-4" />} 
+                text={t('nav', 'liveHouses')}
+                isActive={location.startsWith("/live-houses")} 
+              />
+              <NavItem 
+                href="/events" 
+                icon={<CalendarIcon className="h-4 w-4" />} 
+                text={t('nav', 'events')}
+                isActive={location === "/events"} 
+              />
+              <NavItem 
+                href="/contact" 
+                icon={<MailIcon className="h-4 w-4" />} 
+                text={t('nav', 'contact')}
+                isActive={location === "/contact"} 
+              />
             </nav>
+            <Button 
+              variant="outline"
+              size="sm" 
+              onClick={toggleLanguage}
+              className="ml-4 min-w-[60px]"
+            >
+              <Globe2Icon className="h-4 w-4 mr-2" />
+              {language.toUpperCase()}
+            </Button>
           </div>
         </div>
       </header>
