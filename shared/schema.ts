@@ -8,7 +8,7 @@ export const venues = pgTable("venues", {
   description: text("description").notNull(),
   address: text("address").notNull(),
   image: text("image").notNull(),
-  type: text("type").notNull(), // 'live_house', 'bar', 'club'
+  type: text("type").notNull(), // 'live_house', 'bar'
   genre: text("genre").notNull(),
   capacity: integer("capacity").notNull(),
   features: text("features").array().notNull(),
@@ -16,6 +16,12 @@ export const venues = pgTable("venues", {
   priceRange: text("price_range").notNull(), // e.g. "¥1000-3000"
   website: text("website"),
   phone: text("phone"),
+  googleMapsUrl: text("google_maps_url"),
+  rating: text("rating"),
+  reviewCount: integer("review_count"),
+  popularTimes: text("popular_times"),
+  reviews: text("reviews").array(),
+  additionalImages: text("additional_images").array(),
 });
 
 export const events = pgTable("events", {

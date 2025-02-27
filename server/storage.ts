@@ -136,6 +136,60 @@ export class MemStorage implements IStorage {
         priceRange: "¥2500-6000",
         website: "https://era-tokyo.com",
         phone: "+81-3-5432-9990"
+      },
+      {
+        name: "Poor Cow",
+        description: "A cozy standing bar known for its craft beer selection and friendly atmosphere. Popular among locals and tourists alike, this intimate space offers a curated selection of Japanese and international craft beers alongside classic bar snacks.",
+        address: "2 Chome-13-2 Kitazawa, Setagaya City, Tokyo 155-0031",
+        image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b",
+        type: "bar",
+        genre: "Craft Beer",
+        capacity: 20,
+        features: ["Craft Beer Selection", "Standing Bar", "Bar Food", "English Menu"],
+        openingHours: "17:00-24:00",
+        priceRange: "¥1000-3000",
+        website: null,
+        phone: "+81 3-3795-1080",
+        googleMapsUrl: "https://maps.app.goo.gl/ydpCVC55Fhmr74nF7",
+        rating: "4.3",
+        reviewCount: 89,
+        popularTimes: "Busiest on Friday and Saturday evenings",
+        reviews: [
+          "Great selection of craft beers!",
+          "Cozy atmosphere, friendly staff who speak some English",
+          "Perfect spot for after-work drinks"
+        ],
+        additionalImages: [
+          "https://images.unsplash.com/photo-1514933651103-005eec06c04b",
+          "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+        ]
+      },
+      {
+        name: "Tight 5",
+        description: "A cornerstone of Shimokitazawa's music scene, this intimate live house hosts both emerging and established artists. Known for its excellent sound system and welcoming atmosphere for performers and audience alike.",
+        address: "2 Chome-12-10 Kitazawa, Setagaya City, Tokyo 155-0031",
+        image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a",
+        type: "live_house",
+        genre: "Mixed",
+        capacity: 100,
+        features: ["Professional Sound System", "Stage", "Bar", "Standing Space"],
+        openingHours: "18:30-23:00",
+        priceRange: "¥2000-4000",
+        website: "http://tight5.jp",
+        phone: "+81 3-3795-1996",
+        googleMapsUrl: "https://maps.app.goo.gl/EttyK4rUx8ydzqyn7",
+        rating: "4.5",
+        reviewCount: 156,
+        popularTimes: "Varies by performance schedule",
+        reviews: [
+          "One of the best small venues in Tokyo",
+          "Great sound system and atmosphere",
+          "Perfect size for indie bands"
+        ],
+        additionalImages: [
+          "https://images.unsplash.com/photo-1501386761578-eac5c94b800a",
+          "https://images.unsplash.com/photo-1501386761578-eac5c94b800a"
+        ]
       }
     ];
 
