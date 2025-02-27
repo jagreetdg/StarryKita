@@ -12,6 +12,8 @@ const venueTypeLabels = {
 };
 
 export default function VenueCard({ venue }: { venue: Venue }) {
+  const baseRoute = venue.type === "live_house" ? "/live" : "/bars";
+
   return (
     <Card className="overflow-hidden">
       <div className="aspect-video relative">
@@ -49,7 +51,7 @@ export default function VenueCard({ venue }: { venue: Venue }) {
         </div>
       </CardContent>
       <CardFooter>
-        <Link href={`/venues/${venue.id}`}>
+        <Link href={`${baseRoute}/${venue.id}`}>
           <Button className="w-full">View Details</Button>
         </Link>
       </CardFooter>

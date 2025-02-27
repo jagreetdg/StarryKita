@@ -1,7 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { HomeIcon, MapPinIcon, CalendarIcon, MailIcon, Globe2Icon } from "lucide-react";
+import { HomeIcon, GlassWater, MusicIcon, CalendarIcon, MailIcon, Globe2Icon } from "lucide-react";
 import { useTranslations } from "@/lib/translations/context";
 
 interface NavItemProps {
@@ -17,8 +17,7 @@ function NavItem({ href, icon, text, isActive }: NavItemProps) {
       <Button 
         variant="ghost" 
         className={cn(
-          "flex items-center gap-2",
-          "sm:px-3", 
+          "flex items-center gap-1 px-2 sm:px-3 h-9", 
           isActive && "bg-primary text-primary-foreground hover:bg-primary/90"
         )}
       >
@@ -43,9 +42,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="fixed top-0 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
-        <div className="container mx-auto px-4">
-          <div className="flex h-16 items-center">
-            <nav className="flex flex-1 items-center space-x-1 sm:space-x-4 text-sm font-medium">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="flex h-12 sm:h-14 items-center">
+            <nav className="flex flex-1 items-center space-x-0.5 sm:space-x-2 text-sm font-medium">
               <NavItem 
                 href="/" 
                 icon={<HomeIcon className="h-4 w-4" />} 
@@ -54,13 +53,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               />
               <NavItem 
                 href="/bars" 
-                icon={<MapPinIcon className="h-4 w-4" />} 
+                icon={<GlassWater className="h-4 w-4" />} 
                 text={t('nav', 'bars')}
                 isActive={location.startsWith("/bars")} 
               />
               <NavItem 
                 href="/live" 
-                icon={<MapPinIcon className="h-4 w-4" />} 
+                icon={<MusicIcon className="h-4 w-4" />} 
                 text={t('nav', 'live')}
                 isActive={location.startsWith("/live")} 
               />
@@ -81,16 +80,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               variant="outline"
               size="sm" 
               onClick={toggleLanguage}
-              className="ml-4 min-w-[60px]"
+              className="ml-2 h-8 px-2 sm:px-3"
             >
-              <Globe2Icon className="h-4 w-4 mr-2" />
-              {language.toUpperCase()}
+              <Globe2Icon className="h-4 w-4 sm:mr-2" />
+              <span className="hidden sm:inline-block">{language.toUpperCase()}</span>
             </Button>
           </div>
         </div>
       </header>
 
-      <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
+      <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12">
         {children}
       </main>
 

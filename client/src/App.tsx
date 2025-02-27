@@ -6,7 +6,7 @@ import { TranslationsProvider } from "@/lib/translations/context";
 import Layout from "@/components/layout";
 import Home from "@/pages/home";
 import Bars from "@/pages/bars";
-import LiveHouses from "@/pages/live-houses";
+import Live from "@/pages/live";
 import Events from "@/pages/events";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
@@ -19,7 +19,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/bars" component={Bars} />
         <Route path="/bars/:id" component={VenuePage} />
-        <Route path="/live" component={LiveHouses} />
+        <Route path="/live" component={Live} />
         <Route path="/live/:id" component={VenuePage} />
         <Route path="/events" component={Events} />
         <Route path="/contact" component={Contact} />
