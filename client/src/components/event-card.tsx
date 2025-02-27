@@ -11,6 +11,8 @@ interface EventCardProps {
 }
 
 export default function EventCard({ event, venue }: EventCardProps) {
+  if (!venue) return null;
+
   return (
     <Card className="overflow-hidden">
       <div className="aspect-video relative">

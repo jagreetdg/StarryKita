@@ -14,13 +14,16 @@ interface NavItemProps {
 function NavItem({ href, icon, children, isActive }: NavItemProps) {
   return (
     <Link href={href}>
-      <a className={cn(
-        "flex items-center gap-2 px-4 py-2 rounded-md transition-colors",
-        isActive ? "bg-primary text-primary-foreground" : "hover:bg-accent"
-      )}>
+      <Button 
+        variant="ghost" 
+        className={cn(
+          "flex items-center gap-2",
+          isActive && "bg-primary text-primary-foreground hover:bg-primary/90"
+        )}
+      >
         {icon}
         <span>{children}</span>
-      </a>
+      </Button>
     </Link>
   );
 }
