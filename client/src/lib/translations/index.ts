@@ -11,8 +11,8 @@ export const translations = {
       jp: 'バー'
     },
     liveHouses: {
-      en: 'Live Houses',
-      jp: 'ライブハウス'
+      en: 'Live',
+      jp: 'ライブ'
     },
     events: {
       en: 'Events',
@@ -109,7 +109,7 @@ export const translations = {
       jp: 'お問い合わせ'
     },
     subtitle: {
-      en: 'Have questions about venues or events? We\'re here to help!',
+      en: "Have questions about venues or events? We're here to help!",
       jp: '会場やイベントについてご質問がありますか？お気軽にお問い合わせください！'
     },
     form: {
