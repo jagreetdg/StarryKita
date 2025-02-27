@@ -30,9 +30,12 @@ export class MemStorage implements IStorage {
         description: "Underground live house featuring indie rock bands",
         address: "2-6-10 Kitazawa, Setagaya-ku, Tokyo",
         image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745",
+        type: "live_house",
         genre: "Rock",
         capacity: 200,
         features: ["Stage", "Bar", "Sound System"],
+        openingHours: "18:00-23:00",
+        priceRange: "¥2000-4000",
         website: "https://www.loft-prj.co.jp/SHELTER/",
         phone: "+81-3-3466-7430"
       },
@@ -41,11 +44,56 @@ export class MemStorage implements IStorage {
         description: "Cozy jazz bar with live performances",
         address: "2-12-15 Kitazawa, Setagaya-ku, Tokyo",
         image: "https://images.unsplash.com/photo-1475275166152-f1e8005f9854",
+        type: "bar",
         genre: "Jazz",
         capacity: 50,
         features: ["Intimate Setting", "Full Bar", "Piano"],
+        openingHours: "19:00-02:00",
+        priceRange: "¥3000-6000",
         website: "https://www.three.tokyo/",
         phone: "+81-3-3460-8755"
+      },
+      {
+        name: "Club Que",
+        description: "Legendary live house and rock club",
+        address: "2-5-2 Kitazawa, Setagaya-ku, Tokyo",
+        image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a",
+        type: "live_house",
+        genre: "Rock",
+        capacity: 150,
+        features: ["Stage", "Sound System", "Bar"],
+        openingHours: "18:00-23:30",
+        priceRange: "¥2500-4500",
+        website: "http://www.ukproject.com/que/",
+        phone: "+81-3-3412-9979"
+      },
+      {
+        name: "Bar Baobab",
+        description: "Cozy African-themed bar with unique cocktails",
+        address: "2-3-3 Kitazawa, Setagaya-ku, Tokyo",
+        image: "https://images.unsplash.com/photo-1572116469696-31de0f17cc34",
+        type: "bar",
+        genre: "World Music",
+        capacity: 30,
+        features: ["Cocktails", "International Spirits", "Weekend DJ"],
+        openingHours: "20:00-05:00",
+        priceRange: "¥1000-3000",
+        website: null,
+        phone: "+81-3-3460-7963"
+      },
+      {
+        name: "Ball & Chain",
+        description: "Modern nightclub with top DJs and dance floor",
+        address: "2-13-5 Kitazawa, Setagaya-ku, Tokyo",
+        image: "https://images.unsplash.com/photo-1571204829887-3b8d69e23d93",
+        type: "club",
+        genre: "Electronic",
+        capacity: 300,
+        features: ["Dance Floor", "VIP Area", "Professional Sound System"],
+        openingHours: "22:00-05:00",
+        priceRange: "¥2000-5000",
+        website: "https://ballandchain.jp",
+        phone: "+81-3-3795-1440"
       }
     ];
 
@@ -75,6 +123,15 @@ export class MemStorage implements IStorage {
         price: 3000,
         image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
         performers: ["Midnight Quartet", "Blue Notes"]
+      },
+      {
+        title: "Electronic Music Showcase",
+        description: "Featured DJs and dance music",
+        venueId: 5,
+        date: new Date("2024-04-17T22:00:00"),
+        price: 3500,
+        image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7",
+        performers: ["DJ Akira", "Techno Collective", "Bass Brothers"]
       }
     ];
 

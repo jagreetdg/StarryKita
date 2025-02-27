@@ -8,9 +8,12 @@ export const venues = pgTable("venues", {
   description: text("description").notNull(),
   address: text("address").notNull(),
   image: text("image").notNull(),
+  type: text("type").notNull(), // 'live_house', 'bar', 'club'
   genre: text("genre").notNull(),
   capacity: integer("capacity").notNull(),
   features: text("features").array().notNull(),
+  openingHours: text("opening_hours").notNull(),
+  priceRange: text("price_range").notNull(), // e.g. "¥1000-3000"
   website: text("website"),
   phone: text("phone"),
 });
