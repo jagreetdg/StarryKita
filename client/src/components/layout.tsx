@@ -18,11 +18,15 @@ function NavItem({ href, icon, children, isActive }: NavItemProps) {
         variant="ghost" 
         className={cn(
           "flex items-center gap-2",
+          "sm:px-3", 
           isActive && "bg-primary text-primary-foreground hover:bg-primary/90"
         )}
       >
         {icon}
-        <span>{children}</span>
+        <span className={cn(
+          "hidden", 
+          isActive ? "block" : "sm:block" 
+        )}>{children}</span>
       </Button>
     </Link>
   );
@@ -39,9 +43,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="fixed top-0 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
-            <nav className="flex items-center space-x-4 text-sm font-medium">
+            <nav className="flex items-center space-x-1 sm:space-x-4 text-sm font-medium">
               <NavItem href="/" icon={<HomeIcon className="h-4 w-4" />} isActive={location === "/"}>
                 Home
               </NavItem>
@@ -54,16 +58,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <NavItem href="/contact" icon={<MailIcon className="h-4 w-4" />} isActive={location === "/contact"}>
                 Contact
               </NavItem>
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                onClick={toggleLanguage}
+                className="ml-2 sm:ml-4"
+              >
+                <Globe2Icon className="h-4 w-4" />
+                <span className="hidden sm:inline-block ml-2">{language.toUpperCase()}</span>
+              </Button>
             </nav>
-            <Button 
-              variant="ghost" 
-              size="sm" 
-              onClick={toggleLanguage}
-              className="flex items-center gap-2"
-            >
-              <Globe2Icon className="h-4 w-4" />
-              <span>{language.toUpperCase()}</span>
-            </Button>
           </div>
         </div>
       </header>
