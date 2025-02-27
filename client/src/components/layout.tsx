@@ -59,10 +59,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 isActive={location.startsWith("/bars")} 
               />
               <NavItem 
-                href="/live-houses" 
+                href="/live" 
                 icon={<MapPinIcon className="h-4 w-4" />} 
-                text={t('nav', 'liveHouses')}
-                isActive={location.startsWith("/live-houses")} 
+                text={t('nav', 'live')}
+                isActive={location.startsWith("/live")} 
               />
               <NavItem 
                 href="/events" 

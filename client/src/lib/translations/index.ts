@@ -10,7 +10,7 @@ export const translations = {
       en: 'Bars',
       jp: 'バー'
     },
-    liveHouses: {
+    live: {
       en: 'Live',
       jp: 'ライブ'
     },
@@ -51,10 +51,10 @@ export const translations = {
       jp: '下北沢のバー'
     }
   },
-  liveHouses: {
+  live: {
     title: {
-      en: 'Live Houses in Shimokitazawa',
-      jp: '下北沢のライブハウス'
+      en: 'Live Music in Shimokitazawa',
+      jp: '下北沢のライブ会場'
     }
   },
   search: {

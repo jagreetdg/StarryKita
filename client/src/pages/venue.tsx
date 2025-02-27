@@ -1,13 +1,16 @@
 import { useQuery } from "@tanstack/react-query";
-import { useParams } from "wouter";
+import { useParams, useLocation } from "wouter";
 import { Card } from "@/components/ui/card";
 import EventCard from "@/components/event-card";
 import { Badge } from "@/components/ui/badge";
 import { MapPinIcon, PhoneIcon, GlobeIcon } from "lucide-react";
 import type { Venue, Event } from "@shared/schema";
+import { useTranslations } from "@/lib/translations/context";
 
 export default function VenuePage() {
   const { id } = useParams();
+  const [location] = useLocation();
+  const { t } = useTranslations();
 
   const { data: venue } = useQuery<Venue>({
     queryKey: [`/api/venues/${id}`]
@@ -45,7 +48,7 @@ export default function VenuePage() {
 
           {events && events.length > 0 && (
             <div>
-              <h2 className="text-2xl font-semibold mb-4">Upcoming Events</h2>
+              <h2 className="text-2xl font-semibold mb-4">{t('events', 'title')}</h2>
               <div className="grid gap-6">
                 {events.map((event) => (
                   <EventCard key={event.id} event={event} venue={venue} />
@@ -57,21 +60,21 @@ export default function VenuePage() {
 
         <Card className="p-6 space-y-6">
           <div>
-            <h3 className="font-semibold mb-2">Venue Details</h3>
+            <h3 className="font-semibold mb-2">{t('venue', 'details')}</h3>
             <dl className="space-y-2">
               <div>
-                <dt className="text-sm font-medium">Genre</dt>
+                <dt className="text-sm font-medium">{t('venue', 'genre')}</dt>
                 <dd>{venue.genre}</dd>
               </div>
               <div>
-                <dt className="text-sm font-medium">Capacity</dt>
-                <dd>{venue.capacity} people</dd>
+                <dt className="text-sm font-medium">{t('venue', 'capacity')}</dt>
+                <dd>{venue.capacity} {t('venue', 'capacityUnit')}</dd>
               </div>
             </dl>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-2">Features</h3>
+            <h3 className="font-semibold mb-2">{t('venue', 'features')}</h3>
             <div className="flex flex-wrap gap-2">
               {venue.features.map((feature, i) => (
                 <Badge key={i} variant="secondary">{feature}</Badge>
@@ -80,7 +83,7 @@ export default function VenuePage() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-2">Contact</h3>
+            <h3 className="font-semibold mb-2">{t('venue', 'contact')}</h3>
             <div className="space-y-2">
               {venue.phone && (
                 <a href={`tel:${venue.phone}`} className="flex items-center gap-2 text-sm hover:text-primary">
@@ -91,7 +94,7 @@ export default function VenuePage() {
               {venue.website && (
                 <a href={venue.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-primary">
                   <GlobeIcon className="h-4 w-4" />
-                  <span>Website</span>
+                  <span>{t('venue', 'website')}</span>
                 </a>
               )}
             </div>

@@ -19,8 +19,8 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/bars" component={Bars} />
         <Route path="/bars/:id" component={VenuePage} />
-        <Route path="/live-houses" component={LiveHouses} />
-        <Route path="/live-houses/:id" component={VenuePage} />
+        <Route path="/live" component={LiveHouses} />
+        <Route path="/live/:id" component={VenuePage} />
         <Route path="/events" component={Events} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
