@@ -5,8 +5,8 @@ import { useTranslations } from "@/lib/translations/context";
 interface SearchFilterProps {
   search: string;
   onSearchChange: (value: string) => void;
-  genre: string;
-  onGenreChange: (value: string) => void;
+  genre?: string;
+  onGenreChange?: (value: string) => void;
 }
 
 const GENRES = ["All", "Rock", "Jazz", "Electronic", "Pop", "Hip Hop", "World Music", "Classical"];
@@ -27,18 +27,20 @@ export default function SearchFilter({
         onChange={(e) => onSearchChange(e.target.value)}
         className="sm:flex-1"
       />
-      <Select value={genre} onValueChange={onGenreChange}>
-        <SelectTrigger className="w-full sm:w-[200px]">
-          <SelectValue placeholder={t('search', 'genre')} />
-        </SelectTrigger>
-        <SelectContent>
-          {GENRES.map((g) => (
-            <SelectItem key={g} value={g.toLowerCase()}>
-              {g}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
+      {genre !== undefined && onGenreChange && (
+        <Select value={genre} onValueChange={onGenreChange}>
+          <SelectTrigger className="w-full sm:w-[200px]">
+            <SelectValue placeholder={t('search', 'genre')} />
+          </SelectTrigger>
+          <SelectContent>
+            {GENRES.map((g) => (
+              <SelectItem key={g} value={g.toLowerCase()}>
+                {g}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      )}
     </div>
   );
 }
