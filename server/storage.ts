@@ -32,13 +32,12 @@ export class MemStorage implements IStorage {
 
 	private initializeMockData() {
 		const mockVenues: InsertVenue[] = [
-			// Bars
 			{
 				name: "BAR GHETTO 『月灯』",
 				description:
 					"A cozy bar with a warm, vintage vibe, known for its creative cocktails and inclusive atmosphere. Popular among locals and visitors, it offers a welcoming space with a focus on unique mixology.",
 				address: "2-1-7 Kitazawa, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b",
+				image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
 				type: "bar",
 				genre: "Craft Cocktails",
 				capacity: 20,
@@ -62,8 +61,8 @@ export class MemStorage implements IStorage {
 					"Great spot for a chill night out",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1575657111929-8c0d54c9d517",
-					"https://images.unsplash.com/photo-1599249259735-eea5dd3bc5ad",
+					"https://images.unsplash.com/photo-1517248135467-2c7ed3ab7220",
+					"https://images.unsplash.com/photo-1552566626-52f8b828add9",
 				],
 			},
 			{
@@ -71,7 +70,7 @@ export class MemStorage implements IStorage {
 				description:
 					"A versatile venue with a rooftop bar, hosting DJ nights and live bands. Famous for its curry dishes and affordable happy hour, it’s a favorite for both drinks and casual dining.",
 				address: "2-2-14 Kitazawa, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1517248135467-2c7ed3ab7220",
+				image: "https://images.unsplash.com/photo-1517363898874-0d6a1f2b0b89",
 				type: "bar",
 				genre: "Music Venue",
 				capacity: 50,
@@ -90,8 +89,8 @@ export class MemStorage implements IStorage {
 					"Perfect spot for a casual night",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1519751138087-5bf79df62d5b",
-					"https://images.unsplash.com/photo-1521017432531-2c1f2e4a44a7",
+					"https://images.unsplash.com/photo-1516455590571-18256e5bb9ff",
+					"https://images.unsplash.com/photo-1528495612343-9ca9f4a4de28",
 				],
 			},
 			{
@@ -99,7 +98,7 @@ export class MemStorage implements IStorage {
 				description:
 					"A hidden gem offering Thai and Vietnamese-inspired cuisine by day, turning into a lively bar at night. Known for its cozy vibe and occasional DJ parties.",
 				address: "2-1-7 Kitazawa, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1552566626-52f8b828add9",
+				image: "https://images.unsplash.com/photo-1519125323398-675f398f6978",
 				type: "bar",
 				genre: "Music Bar",
 				capacity: 30,
@@ -123,8 +122,8 @@ export class MemStorage implements IStorage {
 					"A unique spot in Shimokitazawa",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1519996521430-115d784fee85",
-					"https://images.unsplash.com/photo-1561816544-21ecbffa09a3",
+					"https://images.unsplash.com/photo-1506157789151-0d6dbdf2c050",
+					"https://images.unsplash.com/photo-1514327605117-b907ee01e14b",
 				],
 			},
 			{
@@ -132,7 +131,7 @@ export class MemStorage implements IStorage {
 				description:
 					"A long-standing music and dining bar with a 45-year history, offering creative spice cuisine like Myanmar-style curry. Known for its friendly, magical atmosphere.",
 				address: "3-19-3 Kitazawa, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1532635241-17e820acc59f",
+				image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
 				type: "bar",
 				genre: "Music & Dining",
 				capacity: 30,
@@ -156,8 +155,8 @@ export class MemStorage implements IStorage {
 					"Perfect mix of music and food",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1543002588-b32dd5d4f911",
-					"https://images.unsplash.com/photo-1519125323398-675f398f6978",
+					"https://images.unsplash.com/photo-1546706872-8cdc00280358",
+					"https://images.unsplash.com/photo-1511671788563-d91a828a4f40",
 				],
 			},
 			{
@@ -165,7 +164,7 @@ export class MemStorage implements IStorage {
 				description:
 					"Likely a misnaming; assumed to be Live Juice, a daytime juice and smoothie bar offering cold-pressed drinks. Not a traditional bar but included for completeness.",
 				address: "5-36-17 Daizawa, Setagaya-ku, Tokyo, 155-0032, Japan",
-				image: "https://images.unsplash.com/photo-1504672281656-63b6fceed165",
+				image: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea",
 				type: "bar",
 				genre: "Juice & Smoothies",
 				capacity: 20,
@@ -189,8 +188,8 @@ export class MemStorage implements IStorage {
 					"Not really a night bar, but lovely daytime spot",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1495474472287-45d54b6b8b7f",
-					"https://images.unsplash.com/photo-1534274988757-a28bf1a57c17",
+					"https://images.unsplash.com/photo-1530103043960-791807e9080d",
+					"https://images.unsplash.com/photo-1519671482749-f046fcf1e576",
 				],
 			},
 			{
@@ -198,7 +197,7 @@ export class MemStorage implements IStorage {
 				description:
 					"A family-friendly cafe & bar that welcomes children on Sundays until 8 PM. Known for its cultural activities and relaxed atmosphere near Shimokitazawa Station.",
 				address: "2-32-8 Kitazawa, Setagaya-ku, Tokyo, 155-0032, Japan",
-				image: "https://images.unsplash.com/photo-1519125323398-675f398f6978",
+				image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae",
 				type: "bar",
 				genre: "Cafe & Bar",
 				capacity: 25,
@@ -222,8 +221,8 @@ export class MemStorage implements IStorage {
 					"Nice cultural vibe",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1501426026826-31c667bdf23d",
-					"https://images.unsplash.com/photo-1543002588-b32dd5d4f911",
+					"https://images.unsplash.com/photo-1516450360452-931215136b7f",
+					"https://images.unsplash.com/photo-1517365830460-955ce3ccd263",
 				],
 			},
 			{
@@ -232,7 +231,7 @@ export class MemStorage implements IStorage {
 					"Assumed to be DJ Bar Meimei, opened in December 2023, focusing on house and techno music. A fresh addition to Shimokitazawa’s nightlife with a modern music focus.",
 				address:
 					"Unknown, likely in Shimokitazawa, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1519996521430-115d784fee85",
+				image: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263",
 				type: "bar",
 				genre: "House/Techno",
 				capacity: 40,
@@ -257,8 +256,8 @@ export class MemStorage implements IStorage {
 					"Perfect for techno lovers",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1561816544-21ecbffa09a3",
-					"https://images.unsplash.com/photo-1546484396-fb3fc6f8b816",
+					"https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+					"https://images.unsplash.com/photo-1517248135467-2c7ed3ab7220",
 				],
 			},
 			{
@@ -266,7 +265,7 @@ export class MemStorage implements IStorage {
 				description:
 					"A late-night bar with a rock and roll atmosphere, open until 5 AM. Known for its energetic vibe and affordable drinks, it’s a staple for night owls.",
 				address: "2-32-7 Kitazawa, Setagaya-ku, Tokyo, 155-0032, Japan",
-				image: "https://images.unsplash.com/photo-1546484396-fb3fc6f8b816",
+				image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff",
 				type: "bar",
 				genre: "Rock Bar",
 				capacity: 30,
@@ -290,8 +289,8 @@ export class MemStorage implements IStorage {
 					"Staff are super cool",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1501426026826-31c667bdf23d",
-					"https://images.unsplash.com/photo-1519751138087-5bf79df62d5b",
+					"https://images.unsplash.com/photo-1552566626-52f8b828add9",
+					"https://images.unsplash.com/photo-1528495612343-9ca9f4a4de28",
 				],
 			},
 			{
@@ -299,7 +298,7 @@ export class MemStorage implements IStorage {
 				description:
 					"A music bar with top-notch sound systems, hosting DJ sets and live performances. Popular among audiophiles and nightlife enthusiasts.",
 				address: "5-29-15 Daizawa, Setagaya-ku, Tokyo, 155-0032, Japan",
-				image: "https://images.unsplash.com/photo-1521017432531-2c1f2e4a44a7",
+				image: "https://images.unsplash.com/photo-1528495612343-9ca9f4a4de28",
 				type: "bar",
 				genre: "Music Bar",
 				capacity: 100,
@@ -323,8 +322,8 @@ export class MemStorage implements IStorage {
 					"A must-visit for music lovers",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1575657111929-8c0d54c9d517",
-					"https://images.unsplash.com/photo-1599249259735-eea5dd3bc5ad",
+					"https://images.unsplash.com/photo-1506157789151-0d6dbdf2c050",
+					"https://images.unsplash.com/photo-1514327605117-b907ee01e14b",
 				],
 			},
 			{
@@ -332,7 +331,7 @@ export class MemStorage implements IStorage {
 				description:
 					"A rock bar with live performances and DJ sets, popular among music lovers. Known for its large capacity and vibrant rock scene.",
 				address: "2-6-5 Kitazawa, Setagaya-ku, Tokyo, 155-0032, Japan",
-				image: "https://images.unsplash.com/photo-1519751138087-5bf79df62d5b",
+				image: "https://images.unsplash.com/photo-1546706872-8cdc00280358",
 				type: "bar",
 				genre: "Rock Bar",
 				capacity: 200,
@@ -356,8 +355,8 @@ export class MemStorage implements IStorage {
 					"A rock lover’s paradise",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1532635241-17e820acc59f",
-					"https://images.unsplash.com/photo-1504672281656-63b6fceed165",
+					"https://images.unsplash.com/photo-1511671788563-d91a828a4f40",
+					"https://images.unsplash.com/photo-1508700929628-666bc8bd84ea",
 				],
 			},
 			{
@@ -366,7 +365,7 @@ export class MemStorage implements IStorage {
 					"Assumed to be Half Moon Hall, a multi-purpose event space hosting concerts and art events. Offers a versatile experience beyond a typical bar.",
 				address:
 					"Unknown, likely in Shimokitazawa, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1575657111929-8c0d54c9d517",
+				image: "https://images.unsplash.com/photo-1511671788563-d91a828a4f40",
 				type: "bar",
 				genre: "Multi-Purpose",
 				capacity: 150,
@@ -390,8 +389,8 @@ export class MemStorage implements IStorage {
 					"Great for artsy nights",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1517248135467-2c7ed3ab7220",
-					"https://images.unsplash.com/photo-1552566626-52f8b828add9",
+					"https://images.unsplash.com/photo-1530103043960-791807e9080d",
+					"https://images.unsplash.com/photo-1519671482749-f046fcf1e576",
 				],
 			},
 			{
@@ -399,7 +398,7 @@ export class MemStorage implements IStorage {
 				description:
 					"A rock bar with an extensive music collection, run by punk rock icon FIFI. A popular hangout for musicians and rock enthusiasts.",
 				address: "2-9-24 Kitazawa, Setagaya-ku, Tokyo, 155-0032, Japan",
-				image: "https://images.unsplash.com/photo-1599249259735-eea5dd3bc5ad",
+				image: "https://images.unsplash.com/photo-1530103043960-791807e9080d",
 				type: "bar",
 				genre: "Rock Bar",
 				capacity: 30,
@@ -423,8 +422,8 @@ export class MemStorage implements IStorage {
 					"Cozy and full of character",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1495474472287-45d54b6b8b7f",
-					"https://images.unsplash.com/photo-1534274988757-a28bf1a57c17",
+					"https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae",
+					"https://images.unsplash.com/photo-1516450360452-931215136b7f",
 				],
 			},
 			{
@@ -433,7 +432,7 @@ export class MemStorage implements IStorage {
 					"Assumed to be Good Heavens!, a British-style bar with live music and comedy nights. Known for its authentic vibe and diverse events.",
 				address:
 					"Unknown, likely in Shimokitazawa, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1501426026826-31c667bdf23d",
+				image: "https://images.unsplash.com/photo-1519671482749-f046fcf1e576",
 				type: "bar",
 				genre: "British Bar",
 				capacity: 25,
@@ -457,19 +456,17 @@ export class MemStorage implements IStorage {
 					"Nice beer selection",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1519996521430-115d784fee85",
-					"https://images.unsplash.com/photo-1561816544-21ecbffa09a3",
+					"https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+					"https://images.unsplash.com/photo-1519125323398-675f398f6978",
 				],
 			},
-
-			// Live Houses
 			{
 				name: "Shelter Shimokitazawa",
 				description:
 					"A renowned live house known for hosting quality indie rock acts. A staple in Shimokitazawa’s music scene, offering an intimate concert experience.",
 				address:
 					"Unknown, likely near Shimokitazawa Station, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1495474472287-45d54b6b8b7f",
+				image: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea",
 				type: "live_house",
 				genre: "Indie Rock",
 				capacity: 150,
@@ -493,8 +490,8 @@ export class MemStorage implements IStorage {
 					"A Shimokitazawa must-visit",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1532635241-17e820acc59f",
-					"https://images.unsplash.com/photo-1546484396-fb3fc6f8b816",
+					"https://images.unsplash.com/photo-1517363898874-0d6a1f2b0b89",
+					"https://images.unsplash.com/photo-1516455590571-18256e5bb9ff",
 				],
 			},
 			{
@@ -503,7 +500,7 @@ export class MemStorage implements IStorage {
 					"A cozy live house specializing in indie rock performances. Known for its quality events and proximity to Shimokitazawa Station.",
 				address:
 					"Unknown, likely near Shimokitazawa Station, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1534274988757-a28bf1a57c17",
+				image: "https://images.unsplash.com/photo-1514327605117-b907ee01e14b",
 				type: "live_house",
 				genre: "Indie Rock",
 				capacity: 100,
@@ -527,8 +524,8 @@ export class MemStorage implements IStorage {
 					"Great sound quality",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1517248135467-2c7ed3ab7220",
-					"https://images.unsplash.com/photo-1552566626-52f8b828add9",
+					"https://images.unsplash.com/photo-1546706872-8cdc00280358",
+					"https://images.unsplash.com/photo-1511671788563-d91a828a4f40",
 				],
 			},
 			{
@@ -537,7 +534,7 @@ export class MemStorage implements IStorage {
 					"A live house supporting local artists with regular events. Known for its intimate setting and commitment to emerging talent.",
 				address:
 					"Unknown, likely near Shimokitazawa Station, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1543002588-b32dd5d4f911",
+				image: "https://images.unsplash.com/photo-1516450360452-931215136b7f",
 				type: "live_house",
 				genre: "Music Venue",
 				capacity: 80,
@@ -561,8 +558,8 @@ export class MemStorage implements IStorage {
 					"Great for discovering new music",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1504672281656-63b6fceed165",
-					"https://images.unsplash.com/photo-1521017432531-2c1f2e4a44a7",
+					"https://images.unsplash.com/photo-1530103043960-791807e9080d",
+					"https://images.unsplash.com/photo-1519671482749-f046fcf1e576",
 				],
 			},
 			{
@@ -571,7 +568,7 @@ export class MemStorage implements IStorage {
 					"A well-known live house offering a variety of music performances. A key player in Shimokitazawa’s vibrant live music scene.",
 				address:
 					"Unknown, likely near Shimokitazawa Station, Setagaya-ku, Tokyo, 155-0031, Japan",
-				image: "https://images.unsplash.com/photo-1561816544-21ecbffa09a3",
+				image: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263",
 				type: "live_house",
 				genre: "Music Venue",
 				capacity: 120,
@@ -595,8 +592,8 @@ export class MemStorage implements IStorage {
 					"Perfect for music lovers",
 				],
 				additionalImages: [
-					"https://images.unsplash.com/photo-1575657111929-8c0d54c9d517",
-					"https://images.unsplash.com/photo-1599249259735-eea5dd3bc5ad",
+					"https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+					"https://images.unsplash.com/photo-1519125323398-675f398f6978",
 				],
 			},
 		];
@@ -623,77 +620,77 @@ export class MemStorage implements IStorage {
 				title: "Ghetto Groove Night",
 				description:
 					"A soulful DJ night featuring funky beats and a relaxed vibe in the cozy confines of BAR GHETTO Tsuki.",
-				venueId: 1, // BAR GHETTO Tsuki
+				venueId: 1,
 				date: new Date("2025-06-15T21:00:00"),
 				price: 0,
-				image: "https://images.unsplash.com/photo-1506157789151-0d6dbdf2c050",
+				image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
 				performers: ["DJ G"],
 			},
 			{
 				title: "ARENA Shimokitazawa Presents: Groove Night",
 				description:
 					"An electrifying night of electronic music with top DJs spinning on the rooftop, complete with curry specials.",
-				venueId: 2, // ARENA Shimokitazawa
+				venueId: 2,
 				date: new Date("2025-03-15T21:00:00"),
 				price: 2000,
-				image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff",
+				image: "https://images.unsplash.com/photo-1517363898874-0d6a1f2b0b89",
 				performers: ["DJ A", "DJ B", "DJ C"],
 			},
 			{
 				title: "Drunk Tunes Vol.5",
 				description:
 					"A high-energy rock night featuring local bands, showcasing Shimokitazawa’s vibrant music scene.",
-				venueId: 10, // Music Bar ROCKAHOLIC Shimokitazawa
+				venueId: 10,
 				date: new Date("2025-03-22T20:00:00"),
 				price: 2500,
-				image: "https://images.unsplash.com/photo-1546706872-8cdc00280358",
+				image: "https://images.unsplash.com/photo-1519125323398-675f398f6978",
 				performers: ["The Rockers", "Electric Groove"],
 			},
 			{
 				title: "Art and Music Fusion Night",
 				description:
 					"An evening blending live music with art exhibitions, offering a unique cultural experience at Half Moon Hall.",
-				venueId: 11, // Half Moon Hall (ハーフムーンＯ・Ｋ)
+				venueId: 11,
 				date: new Date("2025-07-20T18:00:00"),
 				price: 1500,
-				image: "https://images.unsplash.com/photo-1511671788563-d91a828a4f40",
+				image: "https://images.unsplash.com/photo-1517248135467-2c7ed3ab7220",
 				performers: ["Artist A", "Musician B"],
 			},
 			{
 				title: "Punk Rock Night with Local Bands",
 				description:
 					"A raw and energetic night of punk rock, hosted by punk icon FIFI at Poor Cow.",
-				venueId: 12, // Poor Cow
+				venueId: 12,
 				date: new Date("2025-08-05T20:00:00"),
 				price: 1500,
-				image: "https://images.unsplash.com/photo-1530103043960-791807e9080d",
+				image: "https://images.unsplash.com/photo-1552566626-52f8b828add9",
 				performers: ["Punk Band 1", "Punk Band 2"],
 			},
 			{
 				title: "Laugh Out Loud: Comedy Night",
 				description:
 					"A night of stand-up comedy with local and international comedians, bringing British humor to Shimokitazawa.",
-				venueId: 13, // Good Time Bar (Good Heavens!)
+				venueId: 13,
 				date: new Date("2025-09-12T19:00:00"),
 				price: 2000,
-				image: "https://images.unsplash.com/photo-1514327605117-b907ee01e14b",
+				image: "https://images.unsplash.com/photo-1506157789151-0d6dbdf2c050",
 				performers: ["Comedian 1", "Comedian 2", "Comedian 3"],
 			},
 			{
 				title: "Shelter Shimokitazawa Presents: Rising Stars Night",
 				description:
 					"A showcase of Tokyo’s best new indie rock bands, packed into Shelter’s intimate venue.",
-				venueId: 14, // Shelter Shimokitazawa
+				venueId: 14,
 				date: new Date("2025-04-10T20:00:00"),
 				price: 2500,
-				image: "https://images.unsplash.com/photo-1519671482749-f046fcf1e576",
+				image: "https://images.unsplash.com/photo-1514327605117-b907ee01e14b",
 				performers: ["Band X", "Band Y", "Band Z"],
 			},
 			{
 				title: "BASEMENT BAR Presents: Acoustic Sessions",
 				description:
 					"An intimate evening of acoustic performances by indie artists, highlighting Shimokitazawa’s underground scene.",
-				venueId: 15, // BASEMENT BAR
+				venueId: 15,
 				date: new Date("2025-10-25T19:00:00"),
 				price: 1800,
 				image: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea",
@@ -703,90 +700,90 @@ export class MemStorage implements IStorage {
 				title: "Shimokitazawa LOFT: Metal Mania",
 				description:
 					"A heavy metal night with top bands, delivering a loud and intense experience at LOFT.",
-				venueId: 17, // Shimokitazawa LOFT
+				venueId: 17,
 				date: new Date("2025-11-15T20:00:00"),
 				price: 3000,
-				image: "https://images.unsplash.com/photo-1506157789151-0d6dbdf2c050",
+				image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff",
 				performers: ["Metal Band 1", "Metal Band 2"],
 			},
 			{
 				title: "Thai Beats & Drinks",
 				description:
 					"A night of Southeast Asian-inspired music and cocktails, blending Thai rhythms with Shimokitazawa’s cozy bar scene.",
-				venueId: 3, // Grow Bar Joint
+				venueId: 3,
 				date: new Date("2025-05-18T20:00:00"),
 				price: 1000,
-				image: "https://images.unsplash.com/photo-1517363898874-0a6a1f2b0b89",
+				image: "https://images.unsplash.com/photo-1528495612343-9ca9f4a4de28",
 				performers: ["DJ Som", "Thai Groove Collective"],
 			},
 			{
 				title: "Never Never Land: Spice & Song Night",
 				description:
 					"A unique evening pairing creative spice cuisine with live acoustic performances, celebrating 45 years of history.",
-				venueId: 4, // Never Never Land
+				venueId: 4,
 				date: new Date("2025-06-22T19:00:00"),
 				price: 1500,
-				image: "https://images.unsplash.com/photo-1528495612343-9ca9f4a4de28",
+				image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
 				performers: ["Acoustic Duo N", "Spice Singer"],
 			},
 			{
 				title: "MEIMEI Techno Takeover",
 				description:
 					"A late-night techno extravaganza with cutting-edge DJs, turning MEIMEI into a pulsating dance haven.",
-				venueId: 7, // MEIMEI (DJ Bar Meimei)
+				venueId: 7,
 				date: new Date("2025-07-10T22:00:00"),
 				price: 2000,
-				image: "https://images.unsplash.com/photo-1516450360452-931215136b7f",
+				image: "https://images.unsplash.com/photo-1546706872-8cdc00280358",
 				performers: ["DJ Tek", "Neon Pulse"],
 			},
 			{
 				title: "BAR FORCE: Rock ‘n’ Roll Revival",
 				description:
 					"A late-night rock ‘n’ roll bash with live bands, keeping the party going until dawn.",
-				venueId: 8, // BAR FORCE
+				venueId: 8,
 				date: new Date("2025-08-15T21:00:00"),
 				price: 1200,
-				image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae",
+				image: "https://images.unsplash.com/photo-1511671788563-d91a828a4f40",
 				performers: ["Rock Revivalists", "Midnight Riffs"],
 			},
 			{
 				title: "COUNTER CLUB: Electronica Odyssey",
 				description:
 					"An immersive night of electronic music with high-quality sound, featuring local and guest DJs.",
-				venueId: 9, // COUNTER CLUB
+				venueId: 9,
 				date: new Date("2025-09-20T20:00:00"),
 				price: 1800,
-				image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+				image: "https://images.unsplash.com/photo-1530103043960-791807e9080d",
 				performers: ["DJ Echo", "Synth Voyager"],
 			},
 			{
 				title: "ROCKAHOLIC Presents: Punkapalooza",
 				description:
 					"A wild punk rock night with multiple bands, bringing chaos and energy to Shimokitazawa.",
-				venueId: 10, // Music Bar ROCKAHOLIC Shimokitazawa (additional event)
+				venueId: 10,
 				date: new Date("2025-10-12T19:00:00"),
 				price: 2800,
-				image: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263",
+				image: "https://images.unsplash.com/photo-1519671482749-f046fcf1e576",
 				performers: ["Punk Riot", "Chaos Crew", "Screamers"],
 			},
 			{
 				title: "Shelter Shimokitazawa: Punk Throwdown",
 				description:
 					"A high-octane punk night with local legends, packed into Shelter’s gritty space.",
-				venueId: 14, // Shelter Shimokitazawa (additional event)
+				venueId: 14,
 				date: new Date("2025-11-01T20:00:00"),
 				price: 2300,
-				image: "https://images.unsplash.com/photo-1519671482749-f046fcf1e576",
+				image: "https://images.unsplash.com/photo-1516450360452-931215136b7f",
 				performers: ["Tokyo Punks", "Rebel Yell"],
 			},
 			{
 				title: "THREE Presents: Indie Showcase",
 				description:
 					"A night of emerging indie talent, supporting local artists in an intimate setting.",
-				venueId: 16, // Shimokitazawa THREE
+				venueId: 16,
 				date: new Date("2025-04-25T19:00:00"),
 				price: 2000,
-				image: "https://images.unsplash.com/photo-1528495612343-9ca9f4a4de28",
+				image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae",
 				performers: ["Indie Starlets", "Echo Roots"],
 			},
 		];
